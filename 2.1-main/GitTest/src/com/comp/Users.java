@@ -1,53 +1,61 @@
 package com.comp;
 
+
 public class Users implements User
 {
-     String name;
-     String pass;
-     String masage;
+    String name;
+    String pass;
+    int ID;
 
+    @Override
+    public void creat_com() {
+
+    }
+
+    @Override
+    public void edi_com() {
+
+    }
+
+    @Override
+    public void del_com() {
+
+    }
+
+    @Override
+    public void setId(int ID)
+    {
+        this.ID = ID;
+    }
+
+    @Override
     public void setName(String name)
     {
         this.name = name;
     }
-    public void setMasage(String masage)
-    {
-        this.masage= masage;
-    }
+
+    @Override
     public void setPass(String pass)
     {
-        this.pass=pass;
+        this.pass = pass;
     }
 
+    @Override
+    public int getId()
+    {
+        return 0;
+    }
+
+    @Override
     public String getName()
     {
         return name;
     }
+
+    @Override
     public String getPass()
     {
         return pass;
-    }
-    public String getMasage()
-    {
-        return masage;
-    }
-
-    @Override
-    public void create_masage()
-    {
-        String masage ="";
-    }
-
-    @Override
-    public void edit_masage()
-    {
-
-    }
-
-    @Override
-    public void del_masage()
-    {
-
     }
 }
 
